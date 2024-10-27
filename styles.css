@@ -27,6 +27,26 @@ h1 {
   row-gap: 2vh;
 }
 
+.scoreboard {
+  gap: 0vw;
+}
+
+#scores {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  height: 3vw;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.score-board-title {
+  text-decoration: underline;
+}
+
 #status {
   font-size: 1rem;
   margin: 0;
@@ -43,14 +63,45 @@ h1 {
 
 .cell {
   font-family: 'DynaPuff';
+  cursor: pointer;
+  width: min(15vw, 15vh);
+  height: min(15vw, 15vh);
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: white;
+  border: 0.2rem solid black;
+  box-shadow: 0.2rem 0.2rem;
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.cell:disabled, .cell:hover {
+  box-shadow: 0.1rem 0.1rem gray;
 }
 
 .won {
   background-color: lightgreen;
 }
 
-#reset {
+#reset-button {
   font-family: 'DynaPuff';
+  cursor: pointer;
+  width: min(20vw, 20vh);
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem;
 }
 
+#reset-button:hover {
+  box-shadow: 0.07rem 0.07rem gray;
+  transition: 0.1s ease;
+}
 
+footer {
+  text-align: right;
+  margin-right: 30vw;
+  font-size: 1rem;
+}

@@ -10,6 +10,15 @@
   <div class="game-container">
     <h1>Tic-Tac-Toe</h1>
     <div class="game">
+      <div class="score-board">
+        <p class="score-board-title">Scoreboard</p>
+        <div id="scores">
+          <p>X: <span id="x">0</span></p>
+          <p>O: <span id="y">0</span></p>
+          <p>Tie: <span id="ties">0</span></p>
+        </div>
+      </div>
+      
       <p id="game-status">Turn: <span id="turn">X</span></p>
       <div class="grid-container">
         <button id="0" class="cell"></button>
@@ -24,9 +33,12 @@
         <button id="7" class="cell"></button>
         <button id="8" class="cell"></button>
       </div>
-      <button id="reset">Play again?</button>
+      <button id="reset-button">Play again?</button>
     </div>
   </div>
+  <footer>
+    &#169; 2024 Harsha Puranik
+  </footer>
 </body>
 
 <script src="game-logic.js"></script>
